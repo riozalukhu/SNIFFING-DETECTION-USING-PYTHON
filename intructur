@@ -1,0 +1,31 @@
+- to run this code you must install python first on ubuntu server
+  code:
+  sudo apt install python3
+  
+- after that you install pip3 with following code
+  code:
+  sudo python install python3-pip
+- then, you install scappy library with pip3 
+  code:
+  sudo pip3 install scapy
+- after that you must install MQSQL on ubuntu with the following code
+  code:
+  sudo apt-get install mysql-server
+- then you enter to mysql with the following code:
+  code:
+  sudo mysql
+- and then you create database named 'log'
+- then create table logs with field 
+  CREATE TABLE logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(20),
+    source VARCHAR(50)
+  );
+- after that follow the step:
+  USE log;
+  CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+  GRANT ALL PRIVILEGES ON logO.* TO 'newuser'@'localhost';
+  FLUSH PRIVILEGES;
+- after that run the python code
+
+  
